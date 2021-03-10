@@ -18,4 +18,11 @@
         <property name="dataSource" ref="DataSource"/>
         <property name="configLocation" value="classpath:/conf/mybatis.xml"/>
     </bean>
+    <!--声明mybatis扫描器，创建dao对象-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactoryBeanName" value="sessionFactory"/>
+        <property name="basePackage" value="cn.edu.ctbu.crm.settings.dao"/>
+    </bean>
+    <!--声明service的注解@Service所在的包-->
+    <context:component-scan base-package="cn.edu.ctbu.crm.settings.service"/>
 </beans>

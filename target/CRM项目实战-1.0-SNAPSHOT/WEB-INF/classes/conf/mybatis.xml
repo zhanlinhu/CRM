@@ -11,12 +11,12 @@
     <!--别名设置-->
     <typeAliases>
         <!--name:实体类所在的包名-->
-        <package name="cn.edu.ctbu.domain"/>
+        <package name="cn.edu.ctbu.crm.settings.domain"/>
     </typeAliases>
 
     <mappers>
         <!--name:是包名，这个包中所有的mapper.xml一次都能加载-->
-        <package name="cn.edu.ctbu.dao"/>
+        <package name="cn.edu.ctbu.crm.settings.dao"/>
         <!--<mapper resource=""/>-->
     </mappers>
 </configuration>
